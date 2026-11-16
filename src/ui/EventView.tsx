@@ -140,7 +140,7 @@ export function IncidentDetails({
     >
       <header>
         <span>
-          <Bell size={16} /> Registro do CyberWatch
+          <Bell size={16} /> Registro do Tato Radar
         </span>
         <button className="icon" aria-label="Fechar detalhes" onClick={close}>
           <X size={18} />

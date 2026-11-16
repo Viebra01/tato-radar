@@ -63,7 +63,7 @@ export function Preferences({ settings }: { settings: Settings }) {
       );
       const link = Object.assign(document.createElement("a"), {
         href: url,
-        download: "cyberwatch-config.json",
+        download: "tato-radar-config.json",
       });
       link.click();
       window.setTimeout(() => URL.revokeObjectURL(url), 1000);

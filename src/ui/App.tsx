@@ -217,9 +217,10 @@ export function App() {
         phase={snapshot ? radar.phase : lastPhase}
         settled={!!snapshot}
         recoveryEvidence={recoveryEvidence}
+        collecting={busy}
       />
       <div className="radar-reading">
-        <span className="eyebrow">Tato · Técnico do radar</span>
+        <span className="eyebrow">De olho fora da toca</span>
         <h1>{snapshot ? radar.phrase : "Verificando fontes…"}</h1>
         {snapshot && radar.phase !== "unknown" && radar.phase !== "calm" && (
           <p className="tato-phase">{phaseNames[radar.phase]}</p>
@@ -314,7 +315,7 @@ export function App() {
     <div className={surface}>
       <header className="radar-header">
         <a href="#now" onClick={() => go("now")} className="wordmark">
-          CyberWatch<span>Radar Brasil</span>
+          Tato Radar<span>Tem algo fora da toca?</span>
         </a>
         <div>
           <button

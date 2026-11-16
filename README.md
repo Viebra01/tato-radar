@@ -1,15 +1,17 @@
-# CyberWatch · Radar de segurança digital no Brasil
+# Tato Radar · Tem algo fora da toca?
 
 Extensão Manifest V3 para acompanhar status oficial, avisos, vulnerabilidades e publicações de segurança. Opera localmente em português, com fuso padrão `America/Sao_Paulo`, sem conta, servidor ou API paga.
 
+O Tato é o técnico do radar. Ele acompanha as fontes públicas, comenta o estado da coleta em balões e reage com expressões ilustradas. A boca acompanha cada fala por alguns segundos. No radar tranquilo, ele cochila e acorda quando você passa o mouse. Nos boletins de segurança, põe o capuz e consulta o terminal.
+
 ## Download e instalação
 
-1. Baixe **CyberWatch.zip** na [versão mais recente do GitHub](https://github.com/Viebra01/CyberWatch/releases/latest) e extraia o arquivo em uma pasta permanente. A instalação é manual no navegador de desktop.
+1. Baixe **Tato-Radar.zip** na [versão mais recente do GitHub](https://github.com/Viebra01/CyberWatch/releases/latest) e extraia o arquivo em uma pasta permanente. A instalação é manual no navegador de desktop.
 2. Abra `chrome://extensions` no Chrome ou `edge://extensions` no Edge.
 3. Ative **Modo do desenvolvedor**, clique em **Carregar sem compactação** e selecione a pasta extraída que contém `manifest.json`.
-4. Abra o menu de extensões e fixe o **CyberWatch** na barra. A primeira coleta carrega o histórico sem enviar notificações sobre eventos anteriores.
+4. Abra o menu de extensões e fixe o **Tato Radar** na barra. A primeira coleta carrega o histórico sem enviar notificações sobre eventos anteriores.
 
-Se já usa o CyberWatch, extraia os arquivos novos na mesma pasta da instalação e use **Recarregar** no cartão da extensão. Isso preserva o histórico, os favoritos e as preferências.
+Se já usa o Tato Radar, extraia os arquivos novos na mesma pasta da instalação e use **Recarregar** no cartão da extensão. Isso preserva o histórico, os favoritos e as preferências.
 
 O build usa APIs da família Chromium com suporte ao painel lateral. Políticas do navegador administrado podem restringir a instalação local ou a abertura do painel. [Instalação no Chrome](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked), [instalação no Edge](https://learn.microsoft.com/en-us/microsoft-edge/extensions/getting-started/extension-sideloading).
 

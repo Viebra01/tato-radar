@@ -1,6 +1,6 @@
-# Privacidade do CyberWatch
+# Privacidade do Tato Radar
 
-O CyberWatch guarda preferências no armazenamento local da extensão. IndexedDB armazena incidentes, evidências, histórico de componentes, observações HTTP e metadados de notificações. Esses dados pertencem ao perfil do navegador. Arquivos de exportação de preferências são gerados localmente e podem conter os domínios e termos cadastrados.
+O Tato Radar guarda preferências no armazenamento local da extensão. IndexedDB armazena incidentes, evidências, histórico de componentes, observações HTTP e metadados de notificações. Esses dados pertencem ao perfil do navegador. Arquivos de exportação de preferências são gerados localmente e podem conter os domínios e termos cadastrados.
 
 A extensão envia requisições diretas aos provedores públicos e aos hosts adicionais que você autoriza. O servidor de destino recebe dados normais da conexão, incluindo o endereço IP público. A coleta usa requisições sem credenciais e bloqueia redirecionamentos. A aplicação não incorpora telemetria, conta de usuário, serviço de IA ou backend próprio.
 

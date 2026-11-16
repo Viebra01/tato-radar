@@ -1,5 +1,7 @@
 # Tato ilustrado
 
+Na versão Tato Radar 2.0.0, ImageGen editou a imagem-mestra e as poses Atento, Em guarda e Modo Hacker para criar bocas abertas. O reprodutor sobrepõe apenas a região da boca ao personagem durante a fala. O novo ícone transparente também foi produzido com ImageGen usando a imagem-mestra como referência.
+
 A versão 1.3 usa a prancha turquesa fornecida pelo usuário como referência obrigatória. A imagem-mestra e as duas folhas de atuação foram produzidas pela ferramenta integrada de geração e edição de imagens. O vetor anterior foi substituído integralmente na implementação do mascote.
 
 ## Arquivos e execução

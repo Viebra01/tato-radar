@@ -120,7 +120,7 @@ export async function notify(
     try {
       await display(alert);
     } catch (error) {
-      console.warn("CyberWatch: falha ao exibir notificação", error);
+      console.warn("Tato Radar: falha ao exibir notificação", error);
     }
   }
 }
@@ -148,7 +148,7 @@ export async function digest(settings: Settings, now: number) {
   const alert = {
     id: "digest",
     at: new Date(now).toISOString(),
-    title: "CyberWatch | Resumo de monitoramento",
+    title: "Tato Radar | Resumo de monitoramento",
     message:
       (total === 1 ? "1 registro não lido." : total + " registros não lidos.") +
       " Abra o painel para consultar as fontes.",
@@ -157,6 +157,6 @@ export async function digest(settings: Settings, now: number) {
   try {
     await display(alert);
   } catch (error) {
-    console.warn("CyberWatch: falha ao exibir resumo", error);
+    console.warn("Tato Radar: falha ao exibir resumo", error);
   }
 }

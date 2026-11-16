@@ -377,8 +377,8 @@ export async function updateBadge() {
   if (previous.tatoPhase !== phase || previous.tatoIconVersion !== version) {
     await chrome.action.setIcon({
       path: {
-        16: "tato-" + phase + "-16.png",
-        32: "tato-" + phase + "-32.png",
+        16: "icon-16.png",
+        32: "icon-32.png",
       },
     });
     await chrome.storage.local.set({
@@ -386,7 +386,7 @@ export async function updateBadge() {
       tatoIconVersion: version,
     });
   }
-  await chrome.action.setTitle({ title: "CyberWatch · " + phrase });
+  await chrome.action.setTitle({ title: "Tato Radar · " + phrase });
   await chrome.action.setBadgeBackgroundColor({ color: "#247d68" });
   await chrome.action.setBadgeText({
     text: count > 99 ? "99+" : count ? String(count) : "",

@@ -1,4 +1,11 @@
-# Validação do CyberWatch
+# Validação do Tato Radar
+
+## Tato Radar 2.0.0
+
+- A extensão passa a se chamar Tato Radar, com a assinatura “Tem algo fora da toca?”. Nome do manifesto, títulos, notificações e ícone usam a nova marca.
+- O ícone foi ilustrado com ImageGen a partir do Tato original e exportado nos tamanhos 16, 32, 48 e 128 px com transparência real. O estado do radar aparece no selo numérico e na descrição do ícone.
+- Os balões usam frases locais ligadas à fase do radar, à coleta e à consulta de boletins. Novos quadros de boca aberta foram editados com ImageGen a partir das poses existentes. O reprodutor mostra a região da boca por alguns segundos e encerra o movimento. O cochilo esconde o balão e o despertar tem uma fala própria.
+- O banco IndexedDB continua com o nome interno anterior para manter o histórico, os favoritos e as preferências da instalação existente.
 
 ## Versão 1.11.0
 

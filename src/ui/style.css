@@ -995,7 +995,12 @@ details p {
   overflow-wrap: anywhere;
 }
 @media (prefers-reduced-motion: reduce) {
-  *:not(.tato-eyelids, .tato-dream > span, .tato-review-paw),
+  *:not(
+    .tato-eyelids,
+    .tato-speaking-mouth,
+    .tato-dream > span,
+    .tato-review-paw
+  ),
   *::before,
   *::after {
     animation-duration: 0.01ms !important;

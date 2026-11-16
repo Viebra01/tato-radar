@@ -2,7 +2,7 @@ import { synchronize, updateBadge } from "./engine";
 import { db } from "../storage/db";
 const alarm = "cyberwatch:sync";
 function report(error: unknown) {
-  console.error("CyberWatch:", error);
+  console.error("Tato Radar:", error);
 }
 async function start() {
   if (!(await chrome.alarms.get(alarm)))

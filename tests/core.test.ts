@@ -484,7 +484,7 @@ describe("incidentes, histórico e preferências", () => {
       expect(create).toHaveBeenCalledWith(
         incident.id,
         expect.objectContaining({
-          title: "CyberWatch | GitHub informa indisponibilidade",
+          title: "Tato Radar | GitHub informa indisponibilidade",
           message: expect.stringContaining("Comunicado de"),
         }),
       );
@@ -517,7 +517,7 @@ describe("incidentes, histórico e preferências", () => {
       false,
     ).incident;
     expect(formatNotification(event)).toEqual({
-      title: "CyberWatch | GitHub informa instabilidade",
+      title: "Tato Radar | GitHub informa instabilidade",
       message:
         "Impacto relatado em login e cadastro. O fornecedor está investigando. Comunicado de GitHub Status.",
     });
@@ -537,7 +537,7 @@ describe("incidentes, histórico e preferências", () => {
       false,
     ).incident;
     expect(formatNotification(event)).toEqual({
-      title: "CyberWatch | CVE-2026-1234 com exploração confirmada",
+      title: "Tato Radar | CVE-2026-1234 com exploração confirmada",
       message:
         "A CISA registrou exploração conhecida em Produto (Fornecedor) no catálogo KEV.",
     });
@@ -545,7 +545,7 @@ describe("incidentes, histórico e preferências", () => {
   it("distingue observação local de relato editorial nas notificações", () => {
     const reported = merge(undefined, example, at, false).incident;
     expect(formatNotification(reported)).toMatchObject({
-      title: "CyberWatch | Reportagem sobre suspeita de invasão",
+      title: "Tato Radar | Reportagem sobre suspeita de invasão",
     });
     const observed = {
       ...reported,

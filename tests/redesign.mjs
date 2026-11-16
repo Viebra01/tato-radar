@@ -161,6 +161,22 @@ try {
   }
   await fixture(0);
   await page.getByRole("heading", { name: "Radar atualizado" }).waitFor();
+  assert.equal(
+    await page.evaluate(() => chrome.runtime.getManifest().name),
+    "Tato Radar",
+  );
+  await page.locator(".tato-stage[data-speaking]").waitFor();
+  await page
+    .locator(".tato-speech")
+    .getByText(/Carapaça tranquila/)
+    .waitFor();
+  await page.waitForFunction(() => {
+    const mouth = document.querySelector(".tato-speaking-mouth");
+    return mouth && Number(getComputedStyle(mouth).opacity) > 0.95;
+  });
+  await page
+    .locator(".tato-stage[data-speaking]")
+    .waitFor({ state: "hidden", timeout: 6000 });
   assert.equal(await page.locator(".pinned-services .service-tile").count(), 4);
   await page.getByRole("button", { name: /^Outlook corporativo/ }).click();
   await page
@@ -482,6 +498,8 @@ try {
     await page.getByRole("heading", { name: "Radar atualizado" }).waitFor();
     const sleeping = page.locator('.tato-stage[data-rest="sleeping"]');
     await sleeping.waitFor({ timeout: 16000 });
+    assert.equal(await page.locator(".tato-speaking-mouth").count(), 0);
+    assert.equal(await page.locator(".tato-speech").isVisible(), false);
     assert.deepEqual(
       await page.evaluate(() => globalThis.tatoRestPoses.slice(-3)),
       ["dozing", "nodding", "sleeping"],

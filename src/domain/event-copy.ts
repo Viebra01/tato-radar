@@ -31,7 +31,7 @@ export function eventCopy(event: Incident) {
   }
   const notice = formatNotification(event);
   return {
-    title: notice.title.replace(/^CyberWatch \| /, ""),
+    title: notice.title.replace(/^(?:CyberWatch|Tato Radar) \| /, ""),
     summary: notice.message,
   };
 }

@@ -88,7 +88,7 @@ export function formatNotification(incident: Incident, favorite?: string) {
     : "";
   const phase = servicePhase[incident.raw?.status ?? ""];
   const copy = (title: string, message: string) => ({
-    title: "CyberWatch | " + shortened(title, 76),
+    title: "Tato Radar | " + shortened(title, 76),
     message: shortened(message, 180),
   });
 

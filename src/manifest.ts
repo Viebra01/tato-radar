@@ -2,17 +2,17 @@ import { monitoringSources as sources } from "./providers/catalog.ts";
 const hosts = [...new Set(sources.map((s) => new URL(s.url).origin + "/*"))];
 export const manifest = {
   manifest_version: 3,
-  name: "CyberWatch",
-  version: "1.11.0",
+  name: "Tato Radar",
+  version: "2.0.0",
   description:
-    "Segurança digital no Brasil. Acompanhe incidentes relevantes e serviços importantes.",
+    "Tem algo fora da toca? O Tato acompanha incidentes, serviços e novidades de segurança digital no Brasil.",
   minimum_chrome_version: "116",
   permissions: ["storage", "alarms", "notifications", "sidePanel"],
   host_permissions: hosts,
   optional_host_permissions: ["https://*/*", "http://*/*"],
   action: {
     default_popup: "popup.html",
-    default_title: "CyberWatch",
+    default_title: "Tato Radar · Tem algo fora da toca?",
     default_icon: "icon-32.png",
   },
   icons: {
