@@ -14,11 +14,12 @@
   background-image: url("/tato/speaking.webp");
   background-size: 100% 100%;
   mask-image: radial-gradient(
-    ellipse 5.7% 4.2% at 74.4% 62.8%,
+    ellipse 7.5% 5.5% at 74.4% 62.8%,
     black 75%,
     transparent
   );
   animation: tato-talk 0.72s steps(1) infinite;
+  transform: translate(1%, 4.5%);
 }
 .tato-speaking-mouth:is(
   [data-pose="aware"],
@@ -31,29 +32,29 @@
 .tato-speaking-mouth[data-pose="aware"] {
   background-position: 0% 0%;
   mask-image: radial-gradient(
-    ellipse 6.5% 4.5% at 80% 59%,
+    ellipse 8% 5.5% at 80% 59%,
     black 75%,
     transparent
   );
-  transform: translate(-1%, 3%);
+  transform: translate(-6.5%, 1.5%);
 }
 .tato-speaking-mouth[data-pose="guard"] {
   background-position: 50% 0%;
   mask-image: radial-gradient(
-    ellipse 6.4% 4.6% at 76% 82%,
+    ellipse 8% 5.5% at 76% 82%,
     black 75%,
     transparent
   );
-  transform: translate(0, 2%);
+  transform: translate(-4%, 2%);
 }
 .tato-speaking-mouth[data-pose="defense"] {
   background-position: 100% 0%;
   mask-image: radial-gradient(
-    ellipse 6.6% 4.4% at 63% 68%,
+    ellipse 7% 5% at 63% 68%,
     black 75%,
     transparent
   );
-  transform: translate(4%, 2%);
+  transform: translate(0, -2%);
 }
 @keyframes tato-talk {
   0%,

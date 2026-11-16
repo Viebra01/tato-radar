@@ -1,5 +1,10 @@
 # Validação do Tato Radar
 
+## Tato Radar 2.0.1
+
+- Corrigido o alinhamento dos quadros de boca em Tranquilo, Atento, Em guarda e Modo Hacker. A região ilustrada cobre integralmente o sorriso anterior durante o quadro aberto.
+- Os oito quadros aberto e fechado foram capturados no documento real do popup carregado como extensão e revisados visualmente. O popup a 320 px continua sem rolagem horizontal.
+
 ## Tato Radar 2.0.0
 
 - A extensão passa a se chamar Tato Radar, com a assinatura “Tem algo fora da toca?”. Nome do manifesto, títulos, notificações e ícone usam a nova marca.

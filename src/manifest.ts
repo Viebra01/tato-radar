@@ -3,7 +3,7 @@ const hosts = [...new Set(sources.map((s) => new URL(s.url).origin + "/*"))];
 export const manifest = {
   manifest_version: 3,
   name: "Tato Radar",
-  version: "2.0.0",
+  version: "2.0.1",
   description:
     "Tem algo fora da toca? O Tato acompanha incidentes, serviços e novidades de segurança digital no Brasil.",
   minimum_chrome_version: "116",
