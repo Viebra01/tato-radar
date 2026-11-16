@@ -6,14 +6,15 @@ O Tato é o técnico do radar. Ele acompanha as fontes públicas, comenta o esta
 
 ## Download e instalação
 
-1. Baixe **Tato-Radar.zip** na [versão mais recente do GitHub](https://github.com/Viebra01/CyberWatch/releases/latest) e extraia o arquivo em uma pasta permanente. A instalação é manual no navegador de desktop.
-2. Abra `chrome://extensions` no Chrome ou `edge://extensions` no Edge.
-3. Ative **Modo do desenvolvedor**, clique em **Carregar sem compactação** e selecione a pasta extraída que contém `manifest.json`.
-4. Abra o menu de extensões e fixe o **Tato Radar** na barra. A primeira coleta carrega o histórico sem enviar notificações sobre eventos anteriores.
+**[Baixe a versão mais recente do Tato Radar](https://github.com/Viebra01/tato-radar/releases/latest).** Use o arquivo **Tato-Radar.zip** em **Assets**. O **Source code (zip)** é para quem quer trabalhar no código.
 
-Se já usa o Tato Radar, extraia os arquivos novos na mesma pasta da instalação e use **Recarregar** no cartão da extensão. Isso preserva o histórico, os favoritos e as preferências.
+1. Extraia o ZIP em uma pasta permanente. No computador, abra `chrome://extensions` no Chrome ou `edge://extensions` no Edge.
+2. Ative **Modo do desenvolvedor**, clique em **Carregar sem compactação** e escolha a pasta extraída que contém `manifest.json`. O navegador carrega a pasta, não o ZIP.
+3. Abra o menu de extensões e fixe o **Tato Radar** na barra. A primeira coleta carrega o histórico sem enviar notificações sobre eventos anteriores.
 
-O build usa APIs da família Chromium com suporte ao painel lateral. Políticas do navegador administrado podem restringir a instalação local ou a abertura do painel. [Instalação no Chrome](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked), [instalação no Edge](https://learn.microsoft.com/en-us/microsoft-edge/extensions/getting-started/extension-sideloading).
+Se já usa o Tato Radar, extraia os arquivos novos na mesma pasta da instalação e use **Recarregar** no cartão da extensão, sem desinstalar. Isso preserva o histórico, os favoritos e as preferências. A instalação pelo GitHub é manual e não recebe atualizações pela loja.
+
+Baixe somente da release oficial. O arquivo **SHA256SUMS.txt** ajuda a verificar a integridade do pacote. Confira também a [política de privacidade](docs/PRIVACIDADE.md). Navegadores administrados podem restringir a instalação local. [Instruções do Chrome](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked) · [Instruções do Edge](https://learn.microsoft.com/en-us/microsoft-edge/extensions/getting-started/extension-sideloading).
 
 ## Uso diário
 
