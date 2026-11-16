@@ -1,0 +1,29 @@
+.tato {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+  display: block;
+  margin: auto;
+  image-rendering: auto;
+}
+.radar-popup .radar-summary {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  gap: 0;
+  padding-top: 8px;
+}
+.radar-popup .radar-summary .tato {
+  width: 180px;
+  height: 180px;
+}
+.radar-summary h1 {
+  margin-top: 5px;
+}
+.radar-popup .radar-summary h1 {
+  font-size: 21px;
+}
+.demo .tato {
+  width: 300px;
+  height: 300px;
+}

@@ -1,0 +1,43 @@
+{
+  "name": "cyberwatch",
+  "private": true,
+  "version": "1.11.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src tests *.ts",
+    "test": "vitest run --project unit",
+    "test:live": "vitest run --project live",
+    "test:e2e": "node tests/redesign.mjs",
+    "build": "vite build",
+    "format": "prettier --write src tests docs *.ts *.mjs *.html *.json README.md"
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/geist-mono": "^5.3.0",
+    "dexie": "^4.4.7",
+    "dexie-react-hooks": "^4.4.0",
+    "entities": "^9.0.0",
+    "fast-xml-parser": "^5.12.0",
+    "lucide-react": "^1.72.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/chrome": "^0.3.7",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^10.14.0",
+    "fake-indexeddb": "^6.2.8",
+    "playwright": "^1.65.0",
+    "prettier": "^3.10.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  }
+}
